@@ -159,7 +159,28 @@ public class AccountArrayMain {
 			accounts[i].print();
 		}
 		System.out.println("----------------------------Account객체삭제[4444]----------------------");
-		
+		Account removeAccount=null;
+		for(int i=0;i<accounts.length;i++) {
+			if(accounts[i].getNo()==4444) {
+				removeAccount=accounts[i];
+				accounts[i]=null;
+				break;
+			}
+		}
+		Account[] tempAccounts2=new Account[accounts.length-1];
+		int index=0;
+		for(int i=0;i<accounts.length;i++) {
+			if(accounts[i]!=null) {
+				tempAccounts2[index++] = accounts[i];
+			}
+		}
+		accounts=tempAccounts2;
+		System.out.println(" >> 삭제된 Account");
+		if(removeAccount!=null) {
+			removeAccount.print();
+		}else {
+			System.out.println("삭제실패");
+		}
 		System.out.println("-------삭제후출력----------");
 		for(int i=0;i<accounts.length;i++) {
 			accounts[i].print();
@@ -167,4 +188,3 @@ public class AccountArrayMain {
 		
 	}
 }
-
