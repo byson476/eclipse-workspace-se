@@ -5,5 +5,6 @@ public class ObjectChildMain {
 		String rtnString = oc.toString();
 		System.out.println(rtnString);
 		System.out.println(oc);
+		
 	}
 }
