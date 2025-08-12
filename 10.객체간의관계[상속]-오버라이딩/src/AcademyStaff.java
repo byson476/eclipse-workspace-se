@@ -7,11 +7,10 @@ public class AcademyStaff extends AcademyMember {
 		this.no = no;
 		this.name = name;
 		this.depart = depart;
-		System.out.println(depart);
 	}
 
-	public void staffPrint() {
-		this.print();
+	public void print() {
+		super.print();
 		System.out.println( this.depart);
 	}
 	

@@ -1,17 +1,15 @@
 public class AcademyStaff extends AcademyMember {
-	public String depart; //부서
+	private String depart; //부서
 	
 	public AcademyStaff() {}
 
 	public AcademyStaff(int no, String name, String depart) {
-		this.no = no;
-		this.name = name;
+		super(no, name);
 		this.depart = depart;
-		System.out.println(depart);
 	}
 
-	public void staffPrint() {
-		this.print();
+	public void print() {
+		super.print();
 		System.out.println( this.depart);
 	}
 	

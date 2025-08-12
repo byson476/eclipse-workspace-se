@@ -82,4 +82,5 @@ public class Account {
 	public void setRate(double rate) {
 		this.rate = rate;
 	}
+	
 }
